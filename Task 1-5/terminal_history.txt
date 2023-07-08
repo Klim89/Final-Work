@@ -1,0 +1,25 @@
+mkdir final_work
+cd final_work/
+cat > pets
+    собаки
+    кошки
+    хомяки
+cat > pack_animals
+    лошади
+    верблюды
+    ослы
+cat pets pack_animals > animals
+cat animals
+mv animals human_friends
+ll
+mkdir Control_work
+mv human_friends Control_work/
+cd Control_work/
+ll
+apt update
+apt list mysql-server mysql-client
+apt-get install mysql-server
+apt-get install mysql-client
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.25-1_all.deb
+dpkg -i mysql-apt-config_0.8.25-1_all.deb
+dpkg --purge mysql-apt-config mysql-client-8.0 mysql-client-core-8.0 mysql-common mysql-server-8.0 mysql-server-core-8.0
